@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 .bg-color {
     color:red;
 }
+=======
+body {
+background-color:red;
+}
+>>>>>>> 22ecd4dbcad5a8c717d37a51c26dacb9495c23fd
