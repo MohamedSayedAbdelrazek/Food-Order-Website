@@ -1,4 +1,7 @@
-<?php include ('partials/menu.php');?>
+<?php
+$pageName='Update Admin';
+ include ('partials/menu.php');
+ ?>
 
 
 

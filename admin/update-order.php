@@ -1,4 +1,7 @@
-<?php include ('partials/menu.php');?>
+<?php 
+$pageName='Update Order';
+include ('partials/menu.php');
+?>
 <?php
 if(isset($_GET['id']))
 {

@@ -1,5 +1,6 @@
 <?php
 ob_start(); // Start output buffering
+$pageName='Update Food';
 include('partials/menu.php'); 
 ?>
 
