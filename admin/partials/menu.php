@@ -16,11 +16,11 @@
 <div class="menu text-center">
     <div class="wrapper">  
         <ul>
-            <li><a <?php if($pageName=='Dashboard')  {echo "class='cred'"; }?> href="index.php" >Home</a></li>
-            <li><a <?php if($pageName=='Admins')     {echo "class='cred'"; }?> href="manage-admin.php">Admin</a></li>
-            <li><a <?php if($pageName=='Categories') {echo "class='cred'"; }?> href="manage-category.php">Category</a></li>
-            <li><a <?php if($pageName=='Foods')      {echo "class='cred'"; }?> href="manage-food.php">Food</a></li>
-            <li><a <?php if($pageName=='Orders')     {echo "class='cred'"; }?> href="manage-order.php">Order</a></li>
+            <li><a <?php if($pageName=='Dashboard')  {echo "class='success'"; }?> href="index.php" >Home</a></li>
+            <li><a <?php if($pageName=='Admins')     {echo "class='success'"; }?> href="manage-admin.php">Admin</a></li>
+            <li><a <?php if($pageName=='Categories') {echo "class='success'"; }?> href="manage-category.php">Category</a></li>
+            <li><a <?php if($pageName=='Foods')      {echo "class='success'"; }?> href="manage-food.php">Food</a></li>
+            <li><a <?php if($pageName=='Orders')     {echo "class='success'"; }?> href="manage-order.php">Order</a></li>
             <li><a  href="logout.php">Logout</a></li>
         </ul>
     </div>
