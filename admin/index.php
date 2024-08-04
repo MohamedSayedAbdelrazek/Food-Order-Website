@@ -1,4 +1,7 @@
-<?php include ('partials/menu.php');?>
+<?php 
+$pageName='Dashboard';
+include ('partials/menu.php');
+?>
 
 <!--main content section Starts-->
 <div class="main-content">
