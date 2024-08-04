@@ -1,4 +1,8 @@
-<?php include ('partials/menu.php');?>
+<?php
+$pageName='Admins';
+include ('partials/menu.php');
+
+?>
 
 <!--main content section Starts-->
 <div class="main-content">
