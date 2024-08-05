@@ -117,7 +117,7 @@ include ('partials/menu.php');
         if (isset($_POST['submit'])) 
         {
             $id = $_POST['id'];
-            $title = $_POST['title'];
+            $title=filter_var($_POST['title'],FILTER_SANITIZE_STRING); 
             $current_image = $_POST['current_image'];
             $active = $_POST['active'];
             $featured = $_POST['featured'];
@@ -125,7 +125,7 @@ include ('partials/menu.php');
             // Handle new image upload
             if (isset($_FILES['new-image']['name']) && $_FILES['new-image']['name'] != "")
              {
-                $image_name = $_FILES['new-image']['name'];
+                $image_name=filter_var($_FILES['image']['name'],FILTER_SANITIZE_STRING);
 
                 // Get the extension of the new image
                 $ext = end(explode('.', $image_name));

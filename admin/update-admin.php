@@ -72,9 +72,9 @@ if($res==TRUE) {
  if(isset($_POST['submit'])) 
  {
     //GET ALL THE VALUES FROM FORM TO UBDATE
-      $user_name=$_POST['userName'];
-      $full_name=$_POST['fullName'];
-      $id       =$_POST['id'];
+    $user_name =filter_var($_POST['user_name'],FILTER_SANITIZE_STRING); 
+    $full_name =filter_var($_POST['full_name'],FILTER_SANITIZE_STRING);
+      $id =$_POST['id'];
 
       //create sql query to update admin
       $sql="UPDATE tbl_admin SET
