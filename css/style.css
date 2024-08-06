@@ -46,6 +46,7 @@ font-weight: bold;
 nav ul li a:hover
 {
 color:#eb4d4b;
+border-bottom: 1px #eb4d4b;
 }
 /**************************************/
 .search{
