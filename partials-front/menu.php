@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/cate.css">
 <link rel="stylesheet" href="../css/admin.css">
     <title>Food Order</title>
 </head>

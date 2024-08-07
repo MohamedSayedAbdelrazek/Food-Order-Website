@@ -1,6 +1,4 @@
 <?php include ('../partials-front/menu.php') ;?>
-
-
 <!--...................sec2.................-->
 <div class="search">
     <form action="<?php echo SITEURL;?>front/foodcate.php" method="POST">
