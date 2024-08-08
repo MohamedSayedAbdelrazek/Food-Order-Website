@@ -14,6 +14,11 @@ include ('partials/menu.php');
     echo $_SESSION['update'];
     unset($_SESSION['update']);
   }
+  if(isset( $_SESSION['delete']))
+  {
+    echo  $_SESSION['delete'];
+    unset ( $_SESSION['delete']);
+  }
 ?>
         <table class="tbl-full">
             <tr>
@@ -88,6 +93,7 @@ include ('partials/menu.php');
                         <td><?php echo $customer_address ;?>  </td>
                         <td>
                            <a href="<?php echo SITEURL;?>admin/update-order.php?id=<?php echo $id;?>" class="btn-secondary">Update Order</a>
+                           <a href="<?php echo SITEURL;?>admin/delete-order.php?id=<?php echo $id;?>" class="btn-secondary">Delete Order</a>
                            
                         </td>
                        
