@@ -17,15 +17,26 @@ include ('partials/menu.php');
         echo   $_SESSION['remove'];
         unset(  $_SESSION['remove']);
     }
-   
+    if (isset(  $_SESSION['remove2'])){
+        echo   $_SESSION['remove2'];
+        unset(  $_SESSION['remove2']);
+    }
     if (isset( $_SESSION['failed-remove'])){
         echo $_SESSION['failed-remove'];
         unset( $_SESSION['failed-remove']);
+    }
+    if (isset( $_SESSION['failed-remove2'])){
+        echo $_SESSION['failed-remove2'];
+        unset( $_SESSION['failed-remove2']);
     }
 
     if (isset( $_SESSION['upload'])){
         echo $_SESSION['upload'];
         unset($_SESSION['upload']);
+    }
+    if (isset( $_SESSION['upload2'])){
+        echo $_SESSION['upload2'];
+        unset($_SESSION['upload2']);
     }
 
     if (isset(    $_SESSION['update'])){
@@ -44,6 +55,7 @@ include ('partials/menu.php');
                 <th>Title</th>
                 <th>Price</th>
                 <th>Image</th>
+                <th>Evaluation</th>
                 <th>Featured</th>
                 <th>Active</th>
                 <th>Actions</th>
@@ -63,6 +75,7 @@ include ('partials/menu.php');
                     $description=$row['description'];
                     $price=$row['price'];
                     $image_name=$row['image_name'];
+                    $evaluation_name=$row['evaluation_name'];
                     $category=$row['category_id'];
                     $featured=$row['featured'];
                     $active=$row['active'];
@@ -87,13 +100,26 @@ include ('partials/menu.php');
                             }
                             ?>
                       
-                    
+                    <td>
+                        <?php
+                        if($evaluation_name=="")
+                        {
+                            echo"<div class='error'>Evaluation Image Not Added.</div>";
+                        }
+                        else
+                        {
+                            ?>
+                            <img src="../images/food/food-evaluation/<?php echo $evaluation_name;?>" width="100px">
+                            <?php
+                        }
+                        ?>
+                    </td>
                     </td>
                         <td><?php echo $featured;?></td>
                         <td><?php echo $active;?></td>
                         <td>
                             <a href="<?php echo SITEURL;?>admin/update-food.php?id=<?php echo $id;?>" class="btn-secondary">Update Food</a>
-                            <a href="<?php echo SITEURL;?>admin/delete-food.php?id=<?php echo $id;?> &image_name=<?php echo $image_name;?>" class="btn-danger">Delete Food</a>
+                            <a href="<?php echo SITEURL;?>admin/delete-food.php?id=<?php echo $id;?> &image_name=<?php echo $image_name;?>&evaluation_name=<?php echo $evaluation_name;?>" class="btn-danger">Delete Food</a>
                         </td>
                         
                     </tr>

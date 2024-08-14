@@ -30,6 +30,7 @@ include('partials/menu.php');
                     $description = $row['description'];
                     $price = $row['price'];
                     $current_image = $row['image_name'];
+                    $current_evaluation=$row['evaluation_name'];
                     $category_id = $row['category_id'];
                     $featured = $row['featured'];
                     $active = $row['active'];
@@ -77,12 +78,32 @@ include('partials/menu.php');
                             ?>
                         </td>
                     </tr>
-
                     <tr>
                         <td>New Image : </td>
                         <td><input type="file" name="new_image"></td>
                     </tr>
-
+                    <tr>
+                        <td>Current Evaluation:</td>
+                        <td>
+                            <?php
+                            if($current_evaluation!="") {
+                                ?>
+                                <img src="<?php echo SITEURL;?>images/food/food-evaluation/<?php  echo htmlspecialchars($current_evaluation);?>" width="100px"alt="">
+                                <?php
+                            }
+                            else
+                            {
+                                echo "<div class='error'>Evaluation Not Available</div>";
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>New Evaluation:</td>
+                        <td>
+                            <input type="file" name="new_evaluation">
+                        </td>
+                    </tr>
                     <tr>
                         <td>Category : </td>
                         <td>
@@ -129,6 +150,7 @@ include('partials/menu.php');
                     <tr>
                         <td>
                             <input type="hidden" name="current_image" value="<?php echo htmlspecialchars($current_image); ?>">
+                            <input type="hidden" name="current_evaluation" value="<?php echo htmlspecialchars($current_evaluation);?>">
                             <input type="hidden" name="id" value="<?php echo $id; ?>">
                             <input type="submit" value="Update Category" name="submit" class="btn-secondary">
                         </td>
@@ -143,6 +165,7 @@ include('partials/menu.php');
                 $description=filter_var($_POST['description'],FILTER_SANITIZE_STRING); 
                 $price=filter_var($_POST['price'],FILTER_SANITIZE_NUMBER_INT); 
                 $current_image = $_POST['current_image'];
+                $current_evaluation=$_POST['current_evaluation'];
                 $category = $_POST['category'];
                 $active = $_POST['active'];
                 $featured = $_POST['featured'];
@@ -175,15 +198,50 @@ include('partials/menu.php');
                             exit();
                         }
                     }
-                } else {
+                } 
+                else
+                 {
                     $image_name = $current_image;
                 }
+
+                if(isset($_FILES['new_evaluation']['name']) && $_FILES['new_evaluation']['name']!="")
+                {
+                    $evaluation_name=filter_var($_FILES['new_evaluation']['name'],FILTER_SANITIZE_STRING); 
+                    $evaluation_name_parts = explode('.', $evaluation_name);
+                    $ext2 = end($evaluation_name_parts);
+                    $evaluation_name=uniqid("Food-evaluation-",true).".".$ext2;
+                    $source_path2=$_FILES['new_evaluation']['tmp_name'];
+                    $destination_path2="../images/food/food-evaluation/".$evaluation_name;
+                    $upload2 = move_uploaded_file($source_path2, $destination_path2);
+                    if ($upload2 == false) 
+                    {
+                        $_SESSION['upload2'] = "<div class='error'>Failed To Upload New Evaluation.</div>";
+                        header('location: ' . SITEURL . 'admin/manage-food.php');
+                        ob_end_flush();
+                        exit();
+                    }
+                    if ($current_evaluation != "" && file_exists('../images/food/food-evaluation/' . $current_evaluation)) {
+                        $remove2 = unlink('../images/food/food-evaluation/' . $current_evaluation);
+                        if ($remove2 == false) {
+                            $_SESSION['failed-remove2'] = "<div class='error'>Failed To Remove Current Evaluation Image.</div>";
+                            header('location: ' . SITEURL . 'admin/manage-food.php');
+                            ob_end_flush();
+                            exit();
+                        }
+                    }
+                }
+                else
+                {
+                    $evaluation_name=$current_evaluation;
+                }
+
 
                 $sql3 = "UPDATE tbl_food SET 
                 title='$title',
                 description='$description',
                 price='$price',
                 image_name='$image_name',
+                evaluation_name='$evaluation_name',
                 category_id='$category',
                 active='$active',
                 featured='$featured'

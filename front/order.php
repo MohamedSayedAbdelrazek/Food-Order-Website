@@ -23,6 +23,8 @@ else
         $description=$row['description'];
         $price=$row['price'];
         $image_name=$row['image_name'];
+        $evaluation_name=$row['evaluation_name'];
+
     } 
     else {
         // Food Not Available 
@@ -63,6 +65,17 @@ else
 <div class="text">
 <h3 class="h3for1"><?php echo $title;?></h3>
 <br></br>
+<?php
+    if($evaluation_name==""){
+        echo "<div class='error'>Evaluation Image Not Added.</div>";
+    }
+    else 
+    {
+        ?>
+<img src="<?php echo SITEURL;?>images/food/food-evaluation/<?php echo $evaluation_name;?>" class="imgmen" >
+<?php
+    }
+    ?>
 <p class="pfor">$<?php echo $price;?></p>
 <br>
 <h3 class="h3for12">Quantity</h3>

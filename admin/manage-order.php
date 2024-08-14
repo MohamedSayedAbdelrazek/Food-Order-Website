@@ -93,7 +93,7 @@ include ('partials/menu.php');
                         <td><?php echo $customer_address ;?>  </td>
                         <td>
                            <a href="<?php echo SITEURL;?>admin/update-order.php?id=<?php echo $id;?>" class="btn-secondary">Update Order</a>
-                           <a href="<?php echo SITEURL;?>admin/delete-order.php?id=<?php echo $id;?>" class="btn-secondary">Delete Order</a>
+                           <a href="<?php echo SITEURL;?>admin/delete-order.php?id=<?php echo $id;?>" class="btn-danger">Delete Order</a>
                            
                         </td>
                        

@@ -78,17 +78,21 @@ if($count2>0) {
         $description=$row['description'];
         $price=$row['price'];
         $image_name=$row['image_name'];
+        $evaluation_name=$row['evaluation_name'];
         ?>
 
         <div class="pictur1">
 
-<div class="img_menu1">
-<img src="<?php echo SITEURL ; ?>images/food/<?php echo $image_name?>" alt="Image Not Available."  class="imgmen">
-</div>
+
+<img src="<?php echo SITEURL ; ?>images/food/<?php echo $image_name?>" alt="Image Not Available."  class="imgmenu1">
+ 
 
 <div class="tex_men1">
 <h4 class="h4menu"><?php echo $title;?></h4>
 <br>
+
+<img src="<?php echo SITEURL ; ?>images/food/food-evaluation/<?php echo $evaluation_name?>" alt="Evaluation Image Not Available."  class="imgmen">
+
 <p class="price">$<?php echo $price; ?></p>
 
 <p class="discribe"><?php echo $description; ?></p>

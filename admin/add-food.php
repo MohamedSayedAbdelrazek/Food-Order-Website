@@ -12,6 +12,10 @@ if(isset($_SESSION['upload'])) {
     echo $_SESSION['upload'];
     unset($_SESSION['upload']);
 }
+if(isset($_SESSION['upload2'])) {
+    echo $_SESSION['upload2'];
+    unset($_SESSION['upload2']);
+}
 if (isset($_SESSION['add'])){
     echo $_SESSION['add'];
     unset($_SESSION['add']);
@@ -49,7 +53,12 @@ if (isset($_SESSION['add'])){
                 <input type="file" name="image">
             </td>
         </tr>
-
+        <tr>
+            <td>Select Evaluation: </td>
+            <td>
+                <input type="file" name="evaluation" >
+            </td>
+        </tr>
         <tr>
             <td> Category: </td>
             <td>
@@ -141,7 +150,8 @@ if(isset($_POST['submit']))
 
     //2.Upload The Image If Selected
     //Check Wether The Select Image Is Clicked Or Not And Upload Image Only If The Image Is selected
-    if(isset($_FILES['image']['name'])) {
+    if(isset($_FILES['image']['name'])) 
+    {
         //Get the Details Of The Selected Image
         $image_name=filter_var($_FILES['image']['name'],FILTER_SANITIZE_STRING); 
 
@@ -177,12 +187,40 @@ if(isset($_POST['submit']))
              }
         }
     }
-    else {
+    else 
+    {
         $image_name="";
     }
+
+    if(isset($_FILES['evaluation']['name']))
+    {
+     $evaluation_name=filter_var($_FILES['evaluation']['name'],FILTER_SANITIZE_STRING);
+
+     if($evaluation_name!="")
+     {
+        $ext2=pathinfo($evaluation_name,PATHINFO_EXTENSION);
+        // $ext=end(explode('.',$image_name));
+        $evaluation_name=uniqid("Food-evaluation-" , TRUE).".".$ext2;
+        $src2=$_FILES['evaluation']['tmp_name'];
+        $dst2="../images/food/food-evaluation/".$evaluation_name;
+        $upload2=move_uploaded_file($src2,$dst2);
+        if(!$upload2)
+        {
+           //Failed To Upload Image 
+           $_SESSION['upload2']="<div class='error'>Failed To Upload Image.</div>";
+           header('location:'.SITEURL.'admin/add-food.php');
+           die();   // to stop the process
+        }
+        
+     }
+    }
+    else
+    {
+        $evaluation_name="";
+    }
     //3. Insert Into Data Base
-$sql2="INSERT INTO tbl_food (title, description, price, image_name, category_id, featured, active) 
-                     VALUES ('$title', '$description', '$price', '$image_name', '$category', '$featured', '$active')";
+$sql2="INSERT INTO tbl_food (title, description, price, image_name,evaluation_name, category_id, featured, active) 
+                     VALUES ('$title', '$description', '$price', '$image_name','$evaluation_name', '$category', '$featured', '$active')";
 
 $res2=mysqli_query($conn,$sql2);
 

@@ -28,6 +28,7 @@
                             $price=$row['price'];
                             $description=$row['description'];
                             $image_name=$row['image_name'];
+                            $evaluation_name=$row['evaluation_name'];
                             ?>
                            <div class="pictur1">
                                    
@@ -37,17 +38,29 @@
                                         }
                                         else {
                                             ?>
-                                             <div class="img_menu1">
-                                             <img src="<?php echo SITEURL?>images/food/<?php echo $image_name;?>" class="imgmen">
-                                             </div>
+                                            
+                                             <img src="<?php echo SITEURL?>images/food/<?php echo $image_name;?>" class="imgmenu1">
+                                             
                                             <?php
                                         }
                                         ?>
+                                      
                                   
                                   
                                     <div class="tex_men1">
                                     <h4 class="h4menu"><?php echo $title;?></h4>
                                     <br>
+                                    <?php
+                                    if($evaluation_name==""){
+                                        echo "<div class='error'>Evaluation Image Not Added.</div>";
+                                    }
+                                    else 
+                                    {
+                                        ?>
+                                <img src="<?php echo SITEURL;?>images/food/food-evaluation/<?php echo $evaluation_name;?>" class="imgmen" >
+                                <?php
+                                    }
+                                    ?>
                                     <p class="price">$<?php echo $price?></p>
                                     
                                     <p class="discribe"><?php echo $description; ?></p>

@@ -130,31 +130,18 @@ border-radius: 15px 15px;
 text-align: center;
 }
 /*.....................menu...................*/
-.foodmenu{
-    margin-top: 200px;
-    background-color: #ececec;
-    height: 100%;
-    padding: 3% 0;
-
-    /* flex-direction: row;
-    display: flex; */
-}
-.pictur1{
-width: 500px;
-height: 100%;
-background-color: rgb(248, 252, 255);
-border-radius: 20px;
-display: flex;
-margin-left: 100px;
-margin-top: 20px;
-padding: 20px;
-float: left;
-}
+.imgmenu1{
+    width: 90px;
+    height: 90px;
+    border-radius:10px;
+    padding-right: 20px;
+    
+    }
 .imgmen{
-width: 90px;
-height: 90px;
-border-radius:10px;
-padding-right: 20px;
+width: 120px;
+height: 30px;
+
+padding-bottom: 10px;
 }
 .bu_order{
 background-color: rgb(233, 100, 144); 
@@ -497,9 +484,9 @@ color: rgb(233, 32, 76);
 }
  /*.............................................*/
  .foodmenu{
-    margin-top: 100px;
+        margin-top: 100px;
         background-color: #ececec;
-        height: 100vh;
+        height: auto;
         padding: 3% 0;
         /* flex-direction: row;
         display: flex; */
@@ -509,7 +496,7 @@ color: rgb(233, 32, 76);
   }  
     .pictur1{
     width: 500px;
-    height: 130px;
+    height: 160px;
     background-color: rgb(248, 252, 255);
     border-radius: 20px;
     display: flex;
@@ -518,12 +505,7 @@ color: rgb(233, 32, 76);
     padding: 20px;
     float: left;
     }
-    .imgmen{
-    width: 90px;
-    height: 90px;
-    border-radius:10px;
-    padding-right: 20px;
-    }
+   
     .bu_order{
     background-color: rgb(233, 100, 144); ;
     font-size: 16px;
