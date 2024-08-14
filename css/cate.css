@@ -1,0 +1,41 @@
+
+.conte {
+    margin-left: 30px;
+    margin-top: 80px;
+    display: inline-block;
+}
+#photo1{
+border-radius: 10px;
+}
+#photo1:active{
+    transition: transform 0.3s ease;
+    transform: scale(1.01);
+
+}
+
+.h3 h3{
+color:white;
+font-size: 25px;
+padding-left: 10px;
+margin-top: -490px;
+margin-bottom: 500px;
+}
+nav ul li a:hover
+{
+color:#eb4d4b;
+border-bottom: 2px #eb4d4b solid;
+}
+.foodmenu{
+    margin-top: 200px;
+    background-color: #ececec;
+    height: auto;
+    padding: 3% 0;
+
+    /* flex-direction: row;
+    display: flex; */
+}
+.bu_order:hover{
+    background-color: rgb(233, 32, 76);
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    }

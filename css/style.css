@@ -46,7 +46,6 @@ font-weight: bold;
 nav ul li a:hover
 {
 color:#eb4d4b;
-border-bottom: 1px #eb4d4b;
 }
 /**************************************/
 .search{
@@ -128,6 +127,7 @@ border-radius: 15px 15px;
 }
 .h2menu{
 text-align: center;
+
 }
 /*.....................menu...................*/
 .imgmenu1{
@@ -156,6 +156,7 @@ border: none;
 .bu_order:hover{
     background-color: rgb(233, 32, 76);
     cursor: pointer;
+    letter-spacing: 1px;
     }
 
 .price{
@@ -687,7 +688,7 @@ margin-right:60px;
         margin-top: 50px;
                 display: flex;
     }         
-    
+     
     .final{
 margin-top: 30px;
 
@@ -722,3 +723,6 @@ margin-top: 30px;
         }
            
   /*Format Of cate Section Ends Here*/
+
+
+

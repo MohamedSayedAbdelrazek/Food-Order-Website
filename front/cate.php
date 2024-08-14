@@ -1,6 +1,6 @@
 <?php include ('../partials-front/menu.php') ;?>
-
-<h1>Explore Foods</h1>
+<script src="cate.js"></script>
+<h1 id="explore">Explore Foods</h1>
 <?php
 //Display All Categories That Are Active
 $sql="SELECT * FROM tbl_category WHERE active='Yes'";
@@ -18,13 +18,13 @@ while($row=mysqli_fetch_assoc($res)):
     }
     else {
 ?>
-<div class="cont">
-<div class="img">
+<div class="conte">
+<div class="imge">
 
-        <a href="<?php echo SITEURL?>front/category-food.php?search=<?php echo $title;?>"><img src="<?php echo SITEURL;?>images/category/<?php echo $image_name;?>" class="imge1"></a>
+        <a href="<?php echo SITEURL?>front/category-food.php?search=<?php echo $title;?>"><img src="<?php echo SITEURL;?>images/category/<?php echo $image_name;?>" class="imge1" id="photo1"></a>
     </div>
     <div class="h3">
-    <h3><?php echo $title?></h3>
+    <h3 id="h3id"><?php echo $title?></h3>
     </div>
     
     </div>
