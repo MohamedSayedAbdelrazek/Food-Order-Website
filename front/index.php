@@ -109,8 +109,8 @@ else {
 ?>
 
     
-   <p class="text-center">
-<a href="#">See All Food</a>
+   <p class="text-center" id="see">
+<a href="foods.php">See All Food</a>
    </p>
 </div>
 
