@@ -5,9 +5,11 @@
         
         <link rel="stylesheet" href="../css/admin.css">
         <link rel="stylesheet" href="../css/login.css">
+        
     </head>
 
     <body>
+        
         <div class="login" id="border">
             <h1 class="text-center" id="log">Admin Login</h1> </br>
 
@@ -35,10 +37,11 @@
             <input type="text" name="username" id="usern" placeholder="Enter Your Username">
             </div></br>
            
-            <div>
+            <div >
             <label for="userp" class="lab"> Password:</label>
             <input type="password" name="password" id="userp" placeholder="Enter Your Password" req>
-            </div> </br>
+           
+        </div> </br>
            <input type="submit" value="Login" name="submit" class="btn-primary" id="but1"> </br></br>
          </form>
          <!--Login Form Ends Here-->

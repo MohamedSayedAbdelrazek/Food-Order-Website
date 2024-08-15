@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 23, 2024 at 01:59 PM
+-- Generation Time: Aug 15, 2024 at 02:08 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -77,6 +77,7 @@ CREATE TABLE `tbl_food` (
   `description` text DEFAULT NULL,
   `price` decimal(10,2) DEFAULT NULL,
   `image_name` varchar(255) DEFAULT NULL,
+  `evaluation_name` varchar(255) NOT NULL,
   `category_id` int(10) UNSIGNED NOT NULL,
   `featured` varchar(10) DEFAULT NULL,
   `active` varchar(10) DEFAULT NULL
@@ -86,13 +87,12 @@ CREATE TABLE `tbl_food` (
 -- Dumping data for table `tbl_food`
 --
 
-INSERT INTO `tbl_food` (`ID`, `title`, `description`, `price`, `image_name`, `category_id`, `featured`, `active`) VALUES
-(26, 'Best Burger', ' Burger With Meat.Pineapple And Lots Of Cheese', '5.00', 'Food-Name-669ba60f796193.77245847.jpg', 31, 'Yes', 'Yes'),
-(27, 'Momo', 'Good Momo & Good Price', '6.00', 'Food-Name-6698354c5d0ab6.82428497.jpg', 31, 'Yes', 'Yes'),
-(33, 'Dumplings Special', 'Chicken Dumplings With Herbs From Mountains .', '5.00', 'Food-Name-669ba6add77c16.12055462.jpg', 34, 'Yes', 'Yes'),
-(34, 'Smoky Pizza', 'Best Firewood Pizza In Town', '6.00', 'Food-Name-669bab42a54e44.40141930.jpg', 31, 'Yes', 'Yes'),
-(39, 'Mixed Pizza', 'Pizza With Chicken , Mushroom And Vegetables', '7.00', 'Food-Name-669e07804af352.60609837.jpg', 31, 'Yes', 'Yes'),
-(40, 'Sadeko Momo', 'Best Spicy Momo For Winter.', '6.00', 'Food-Name-669e08d399f834.99666672.jpg', 31, 'Yes', 'Yes');
+INSERT INTO `tbl_food` (`ID`, `title`, `description`, `price`, `image_name`, `evaluation_name`, `category_id`, `featured`, `active`) VALUES
+(27, 'Momo', 'Good Momo & Good Price', '6.00', 'Food-Name-6698354c5d0ab6.82428497.jpg', 'Food-evaluation-66b50a496972b1.25988822.jpg', 31, 'Yes', 'Yes'),
+(33, 'Dumplings Special', 'Chicken Dumplings With Herbs From Mountains .', '8.00', 'Food-Name-669ba6add77c16.12055462.jpg', 'Food-evaluation-66b50bbf948cd6.22911826.jpg', 31, 'Yes', 'Yes'),
+(34, 'Smoky Pizza', 'Best Firewood Pizza In Town', '9.00', 'Food-Name-669bab42a54e44.40141930.jpg', 'Food-evaluation-66b50bc88cad75.46380841.jpg', 31, 'Yes', 'Yes'),
+(39, 'Mixed Pizza', 'Pizza With Chicken , Mushroom And Vegetables', '10.00', 'Food-Name-669e07804af352.60609837.jpg', 'Food-evaluation-66b50bd03922f1.33282583.jpg', 31, 'Yes', 'Yes'),
+(40, 'Sadeko Momo', 'Best Spicy Momo For Winter.', '7.00', 'Food-Name-669e08d399f834.99666672.jpg', 'Food-evaluation-66b50bd7715a70.48400161.jpg', 31, 'Yes', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -121,7 +121,9 @@ CREATE TABLE `tbl_order` (
 INSERT INTO `tbl_order` (`ID`, `food`, `price`, `qty`, `total`, `order_date`, `status`, `customer_name`, `customer_contact`, `customer_email`, `customer_address`) VALUES
 (1, 'Mixed Pizza', '7', 2, '14', '2024-07-22 04:09:17', 'Cancelled', 'Mohamed Sayed', '01155331015', 'mohamedsayed051213@gmail.com', '   Elshaheed street'),
 (2, 'Momo', '6', 2, '12', '2024-07-23 07:26:22', 'Delivered', 'Mohamed Sayed', '01155331015', 'mohamedsayed051213@gmail.com', '           Elshaheed street'),
-(3, 'Dumplings Special', '5', 1, '5', '2024-07-23 10:14:17', 'On Delivery', 'Ahmed Sayed', '01040179169', 'ahmedtito12389@gmail.com', ' Cairo\r\nElnasr City / Cairo');
+(3, 'Dumplings Special', '5', 1, '5', '2024-07-23 10:14:17', 'Delivered', 'Ahmed Sayed', '01040179169', 'ahmedtito12389@gmail.com', '  Cairo\r\nElnasr City / Cairo'),
+(4, 'Momo', '6', 2, '12', '2024-07-23 02:57:36', 'Delivered', 'Mohamed Sayed', '01155331015', 'mohamedsayed051213@gmail.com', ' Elshaheed street'),
+(5, 'Momo', '6', 1, '6', '2024-07-25 11:52:45', 'Ordered', 'Ahmed Sayed', '01155331015', 'mohamedsayed051213@gmail.com', 'Cairo\r\nElnasr City / Cairo');
 
 --
 -- Indexes for dumped tables
@@ -160,25 +162,25 @@ ALTER TABLE `tbl_order`
 -- AUTO_INCREMENT for table `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
-  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `tbl_food`
 --
 ALTER TABLE `tbl_food`
-  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
