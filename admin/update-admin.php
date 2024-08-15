@@ -40,6 +40,7 @@ if($res==TRUE) {
     {
         //Redirect to manage-admin page
         header('location:'.SITEURL.'admin/manage-admin.php');
+        die;
     }
 }
 
