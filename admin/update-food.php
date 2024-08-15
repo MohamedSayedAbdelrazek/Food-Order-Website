@@ -139,16 +139,16 @@ include('partials/menu.php');
             <?php
             if (isset($_POST['submit'])) {
                 $id = $_POST['id'];
-                $title = $_POST['title'];
-                $description = $_POST['description'];
-                $price = $_POST['price'];
+                $title=filter_var($_POST['title'],FILTER_SANITIZE_STRING);
+                $description=filter_var($_POST['description'],FILTER_SANITIZE_STRING); 
+                $price=filter_var($_POST['price'],FILTER_SANITIZE_NUMBER_INT); 
                 $current_image = $_POST['current_image'];
                 $category = $_POST['category'];
                 $active = $_POST['active'];
                 $featured = $_POST['featured'];
 
                 if (isset($_FILES['new_image']['name']) && $_FILES['new_image']['name'] != "") {
-                    $image_name = $_FILES['new_image']['name'];
+                    $image_name=filter_var($_FILES['image']['name'],FILTER_SANITIZE_STRING); 
                     $image_name_parts = explode('.', $image_name);
                     $ext = end($image_name_parts);
                     $image_name = uniqid("Food-Name-", true) . "." . $ext;

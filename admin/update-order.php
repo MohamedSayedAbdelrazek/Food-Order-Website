@@ -110,10 +110,10 @@ if(isset($_POST['submit']))
     $qty=$_POST['qty'];
     $total=$price * $qty;
     $status=$_POST['status'];
-    $custmoer_name=$_POST['customer_name'];
-    $custmoer_contact=$_POST['customer_contact'];
-    $custmoer_email=$_POST['customer_email'];
-    $custmoer_address=$_POST['customer_address'];
+    $custmoer_name=filter_var($_POST['customer_name'],FILTER_SANITIZE_STRING); 
+    $custmoer_contact=filter_var( $_POST['customer_contact'],FILTER_SANITIZE_NUMBER_INT);
+    $custmoer_email=filter_var($_POST['customer_email'],FILTER_SANITIZE_EMAIL); 
+    $custmoer_address=filter_var($_POST['customer_address'],FILTER_SANITIZE_STRING); 
 
     $sql2="UPDATE tbl_order SET 
     qty=$qty,

@@ -116,9 +116,9 @@ if (isset($_SESSION['add'])){
 if(isset($_POST['submit'])) 
 {
     //1.Get The Data From Form
-    $title=$_POST['title'];
-    $description=$_POST['description'];
-    $price=$_POST['price'];
+    $title=filter_var($_POST['title'],FILTER_SANITIZE_STRING); 
+    $description=filter_var($_POST['description'],FILTER_SANITIZE_STRING); 
+    $price=filter_var($_POST['price'],FILTER_SANITIZE_NUMBER_INT); 
     $category=$_POST['category'];
     // $image_name=$_POST['image'];
     
@@ -143,7 +143,7 @@ if(isset($_POST['submit']))
     //Check Wether The Select Image Is Clicked Or Not And Upload Image Only If The Image Is selected
     if(isset($_FILES['image']['name'])) {
         //Get the Details Of The Selected Image
-        $image_name=$_FILES['image']['name'];
+        $image_name=filter_var($_FILES['image']['name'],FILTER_SANITIZE_STRING); 
 
         //Check Wether The Image Is Selected Or Not and Upload Image If Selected
         if($image_name!=""){

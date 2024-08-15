@@ -46,7 +46,6 @@ font-weight: bold;
 nav ul li a:hover
 {
 color:#eb4d4b;
-border-bottom: 2px #eb4d4b;
 }
 /**************************************/
 .search{
@@ -170,6 +169,7 @@ border: none;
 .bu_order:hover{
     background-color: rgb(233, 32, 76);
     cursor: pointer;
+    letter-spacing: 1px;
     }
 
 .price{

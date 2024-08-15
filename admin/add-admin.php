@@ -49,8 +49,9 @@ if(isset($_POST['submit'])) {
     // Button Clicked
 
     // Get The Data From The Form
-    $full_name = $_POST['full_name'];
-    $user_name = $_POST['user_name'];
+  
+    $full_name =filter_var($_POST['full_name'],FILTER_SANITIZE_STRING);
+    $user_name =filter_var($_POST['user_name'],FILTER_SANITIZE_STRING); 
     $password = md5($_POST['password']);   // Password Encryption with md5
 
     // SQL Query To Save The Data Into DataBase

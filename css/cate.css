@@ -5,14 +5,14 @@
     display: inline-block;
 }
 #photo1{
-
 border-radius: 10px;
 }
 #photo1:active{
     transition: transform 0.3s ease;
-    transform: scale(1.1);
+    transform: scale(1.01);
 
 }
+
 .h3 h3{
 color:white;
 font-size: 25px;
@@ -34,3 +34,8 @@ border-bottom: 2px #eb4d4b solid;
     /* flex-direction: row;
     display: flex; */
 }
+.bu_order:hover{
+    background-color: rgb(233, 32, 76);
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    }

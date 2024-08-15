@@ -100,10 +100,10 @@ else
 <?php
 if(isset($_POST['submit'])) {
     $qty=$_POST['qty'];
-    $full_name=$_POST['full_name'];
-    $phone=$_POST['phone'];
-    $email=$_POST['email'];
-    $address=$_POST['address'];
+    $full_name=filter_var($_POST['full_name'],FILTER_SANITIZE_STRING); 
+    $phone=filter_var($_POST['phone'],FILTER_SANITIZE_NUMBER_INT); 
+    $email=filter_var($_POST['email'],FILTER_SANITIZE_EMAIL); 
+    $address=filter_var($_POST['address'],FILTER_SANITIZE_STRING); 
     $order_date=date("y-m-d h:i:sa");
     $status="Ordered";     // Ordered , on Delivery , Delivered , Cancelled
     $sql2="INSERT INTO tbl_order SET 

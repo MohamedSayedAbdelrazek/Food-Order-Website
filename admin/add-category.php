@@ -77,13 +77,13 @@ if(isset($_POST['submit'])):
 // Button Clicked
 
       // Get The Data From The Form
-    $title=$_POST['title'];
+    $title=filter_var($_POST['title'],FILTER_SANITIZE_STRING); 
 
     //for radion input , We need to check wether the button is selected or not
     if(isset($_POST['featured']))
     {
         //Get The Value From Form 
-        $featured=$_POST['featured'];
+        $featured=$_POST['featured']; 
     }
     else
     {
@@ -114,7 +114,7 @@ if(isset($_FILES['image']['name']))
     //Upload The File
     //To Upload Image , We Need image name, source path and destination path
     
-    $image_name=$_FILES['image']['name']; 
+    $image_name=filter_var($_FILES['image']['name'],FILTER_SANITIZE_STRING); 
     //upload the image only if image is selected
     if($image_name!="")
     {
