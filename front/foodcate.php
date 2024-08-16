@@ -65,7 +65,7 @@
                                     
                                     <p class="discribe"><?php echo $description; ?></p>
                                     <br>
-                                    <a href="order.php"><button class="bu_order">Order Now</button></a>
+                                    <a href="order.php?id=<?php echo $id;?>"><button class="bu_order">Order Now</button></a>
                                     
                                     </div>
                                     </div>
