@@ -5,7 +5,8 @@
         
         <link rel="stylesheet" href="../css/admin.css">
         <link rel="stylesheet" href="../css/login.css">
-        
+        <link rel="stylesheet" href="../css/cate.css">
+     
     </head>
 
     <body>
@@ -36,17 +37,20 @@
             <label for="usern" class="lab"> Username:</label>
             <input type="text" name="username" id="usern" placeholder="Enter Your Username">
             </div></br>
-           
-            <div >
             <label for="userp" class="lab"> Password:</label>
-            <input type="password" name="password" id="userp" placeholder="Enter Your Password" req>
+            <div class="icon">
            
+            <input type="password" name="password" id="userp" placeholder="Enter Your Password" req>
+            <img src="eye.png" alt="" onclick="pass()"
+class="pass-icon" id="pass-icon">
+
         </div> </br>
            <input type="submit" value="Login" name="submit" class="btn-primary" id="but1"> </br></br>
          </form>
          <!--Login Form Ends Here-->
             <p class="text-center" id="footer">Created By <a href="#">Mohamed Sayed</a> <span>&</span> <a href="#">Aya Kamal</a></p>
         </div>
+        <script src="pass.js"></script>
     </body>
 </html>
 

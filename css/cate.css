@@ -53,3 +53,23 @@ border-radius: 5px;
 #update-13{
     margin-bottom: 2px;
 }
+
+
+.icon{
+    margin-bottom: 8px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid rgb(31, 30, 30);
+    border-radius: 10px;
+}
+.icon input{
+    padding: 10px 5px;
+    outline: none;
+    border: 0;
+}
+.pass-icon{
+    position: absolute;
+    width: 25px;
+    top: 0px;
+    right: 10px;
+}
