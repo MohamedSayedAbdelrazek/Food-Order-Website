@@ -6,6 +6,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/cate.css">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
