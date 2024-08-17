@@ -1,448 +1,54 @@
 *{
-padding: 0;
-margin:0 ;
-font-family: sans-serif;
-}
-    
-.contain{
-
-
-width: 100%;
-height: 70px;
-
-
-}
-nav{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-top: 10px;
-}
-
-.text-white {
-    color:white;
-}
-
-.logoimg{
-width: 90px;
-height: 45px;
-padding-left: 120px;
-}
-nav ul{
-padding-right: 90px;
-
-
-}
-nav ul li{
-list-style: none;
-display: inline-block;
-padding: 10px 20px;
-}
-nav ul li a{
-color:#ff7979;
-text-decoration: none;
-font-weight: bold;
-}
-nav ul li a:hover
-{
-color:#eb4d4b;
-}
-/**************************************/
-.search{
-width: 100%;
-height: 200px;
-background-image: url(../images/bg.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment:fixed;
-background-position: bottom ;
-padding: 4% 0;
-margin-top:20px ;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.input1{
-width: 560px;
-height: 30px;
-border: none;
-border-radius: 7px;
-font-size: 17px;
-padding: 5px;
-}
-.but1{
-/* background-color: rgb(233, 100, 144); */
-background-color:rgb(255, 71, 111);
-height: 40px;
-width: 70px;
-border-radius: 6px;
-border: none;
-font-size: 16px;
-color: white;
-}
-.but1:hover{
-
-background-color:rgb(233, 32, 76);
-cursor: pointer;
-
-}
-
-#h1sec3{
-margin-top: 55px;
-text-align: center;
-margin-bottom: 100px;
-}
-.catgories{
-
-    padding: 7% 0;
-}
-.sec3{
-margin-top: 40px;
-display: flex;
-justify-content: space-evenly;
-
-}
-.pizzaimg{
-height: 380px;
-width: 295px;
-border-radius: 15px 15px;
-margin-right: -50px;
-}
-.h3piza{
-
-    padding-bottom: 80px;
-}
-.burgerimg{
-    height: 380px;
-    width: 295px;
-    border-radius: 15px;
-margin-right: -40px;
-}
-.momoimg{
-    height: 380px;
-    width: 295px;
-   
-padding-right:60px ;
-border-radius: 15px 15px;
-}
-.h2menu{
-text-align: center;
-
-}
-/*.....................menu...................*/
-.imgmenu1{
-    width: 90px;
-    height: 90px;
-    border-radius:10px;
-    padding-right: 20px;
-    
+    padding: 0;
+    margin:0 ;
+    font-family: sans-serif;
     }
-.imgmen{
-width: 120px;
-height: 30px;
-
-padding-bottom: 10px;
-}
-.bu_order{
-background-color: rgb(233, 100, 144); 
-font-size: 16px;
-color: white;
-border-radius: 5px;
-width: 99px;
-height: 22px;
-margin-top:-20px;
-border: none;
-}
-.bu_order:hover{
-    background-color: rgb(233, 32, 76);
-    cursor: pointer;
-    letter-spacing: 1px;
-    }
-
-.price{
-font-weight: bold;
-font-size: 20px;
-}
-.h4menu{
-font-weight: bold;
-font-size: 18px;
-}
-.discribe{
-
-color: darkgray;
-}
-.pictur2{
-    
-    width: 500px;
-    height: 130px;
-    background-color: rgb(248, 252, 255);
-    border-radius: 20px;
-    display: flex;
-    margin-left: 30px;
-    margin-top: 20px;
-    padding: 20px;
-   
-    float: left;
-}
-
-.pictur3{
-    width: 500px;
-    height: 130px;
-    background-color: rgb(248, 252, 255);
-    border-radius: 20px;
-    display: flex;
-    margin-left: 100px;
-    margin-top: 20px;
-    padding: 20px;
-    float: left;
-    
-   
-}
-.pictur4{
-    width: 500px;
-    height: 130px;
-    background-color: rgb(248, 252, 255);
-    border-radius: 20px;
-    display: flex;
-    margin-left: 30px;
-    margin-top: 20px;
-    padding: 20px;
-     float: left; 
-    }
-
-    .pictur5{
-        width: 500px;
-        height: 130px;
-        background-color: rgb(248, 252, 255);
-        border-radius: 20px;
-        display: flex;
-        margin-left: 100px;
-        margin-top: 20px;
-        padding: 20px;
-         float: left; 
-        }
- .pictur6{
- width: 500px;
-height: 130px;
-background-color: rgb(248, 252, 255);
- border-radius: 20px;
- display: flex;
- margin-left: 30px;
- margin-top: 20px;
- padding: 20px;
- float: left; 
-  }
-  .text-center{
-text-align: center;
-padding-top: 50px;
-color: rgb(228, 98, 137);
-clear: both;
-  }
-  .text-center a{
-text-decoration: none;
-font-size: 18px;
-color: rgb(248, 88, 136);
-  }
-.social{
-display: flex;
-justify-content: center;
-align-items: flex-start;
-}
-.social ul li{
-list-style: none;
-display: inline-block;
-margin: 15px;
-}
-/*foot*/
-#p_end{
-    text-align: center;
-    padding: 10px 0px;
-}
-#span_end a{
-text-decoration: none;
-color:  rgb(255, 97, 145);
-}
-
-#span_end a:hover{
-color: rgb(233, 32, 76);
-}
-.text-center a:hover{
-    color: rgb(233, 32, 76);
-}
-
-/*Format Of Order Section Starts Here*/
-
-/*............form................*/
-.forms{
-    /* background-image: url(bg.jpg); */
-    background-color: rgb(30, 166, 219);
-    height: 900px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-    .h2form{
-    text-align: center;
-    color: white;
-    padding: 100px;
-    /* margin-left: 550px; */
-    }
-    .for1{
-    margin-top: -70px;
-    width: 500px;
-    height: 400px;
-    margin-left: 450px;
-    }
-    #imgfor{
-    height: 100px;
-    width: 100px;
-    border-radius: 15px;
-    margin: 20px;
-    }
-    /***************************************************************************/
-  
-/* Container for each image box */
-.box-3 {
-    width: 85%;  /* Increased to 100% to make the image boxes larger */
-    float: left;
-    margin: 1%;  /* Reduced margin to fit more content */
-}
-
-/* Ensure the container hides any overflow from image scaling */
-.float-container {
-    position: relative;
-    overflow: hidden;  /* Hides the overflow caused by scaling */
-}
-
-/* Text on the image */
-.float-text {
-    position: absolute;
-    bottom: 40px;  /* Adjusted for better visibility */
-    left: 50%;
-    transform: translateX(-50%);  /* Center text horizontally */
-    font-size: 1.5em;  /* Increased font size */
-}
-
-/* Image styling */
-.img-responsive {
-    width: 100%;             /* Full width of the box */
-    height: 500px;           /* Increased height to make images taller */
-    object-fit: cover;       /* Ensure the image covers the area without distortion */
-    transition: transform 0.3s ease;  /* Smooth scaling transition */
-}
-
-/* Add rounded corners to images */
-.img-curve {
-    border-radius: 15px;
-}
-
-/* Hover effect for enlarging images */
-.box-3:hover .img-responsive {
-    transform: scale(1.15);  /* Increased the scale factor for more noticeable enlargement */
-}
-
-
-    /**************************************************************************/
-    .inpt{
-    border: none;
-    height: 22px;
-    width: 300px;
-    padding-left: 8px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    }
-    .pfor{
-     font-size: 18px;
-    }
-    
-    /*..................form2..............*/
-    .for2{
-    margin-top: 40px;
-    }
-    .h4for2{
-    padding: 10px;
-    }
-    .inpt2{
-    margin:0px 10px;
-    height: 28px;
-    border: none;
-    border-radius: 4px;
-    width: 90%;
-    padding: 2px 10px;
-    font-size: 17.5px;
-    }
-    #txt{
-    
-        margin:0px 10px;
-        border: none;
-        border-radius: 10px;
-        width: 90%;
-        padding: 2px 10px;
-        font-size: 17.5px;
-    
-    
-    }
-    
-    .btn{
-    
         
-            /* background-color: rgb(233, 100, 144); */
-            background-color:rgb(255, 71, 111);
-            height: 35px;
-            width: 101px;
-            border-radius: 6px;
-            border: none;
-            font-size: 16px;
-            color: white;
-            margin-top: 6px;
-            margin: 6px 10px;
-            }
-            .btn:hover{
-            
-            background-color:rgb(233, 32, 76);
-            cursor:pointer;
-            
-            }
-    .complete{
-     
+    .contain{
+    
+    
     width: 100%;
-    height: 300px;
+    height: 70px;
+    
+    
+    }
+    nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
     }
     
+    .text-white {
+        color:white;
+    }
     
-    .social{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        }
-        .social ul li{
-        list-style: none;
-        display: inline-block;
-        margin: 15px;
-        }
-        /*foot*/
-        #p_end{
-            text-align: center;
-            padding: 10px 0px;
-        }
-        #span_end a{
-        text-decoration: none;
-        color:  rgb(255, 97, 145);
-        }
-        
-        #span_end a:hover{
-        color: rgb(233, 32, 76);
-        }
-        .text-center a:hover{
-            color: rgb(233, 32, 76);
-        }
-/*Format Of Order Section Ends Here*/
-
-
-/*Format Of foodcate Section Starts Here*/
-
-
-
-.search{
+    .logoimg{
+    width: 90px;
+    height: 45px;
+    padding-left: 120px;
+    }
+    nav ul{
+    padding-right: 90px;
+    
+    
+    }
+    nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    }
+    nav ul li a{
+    color:#ff7979;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    nav ul li a:hover
+    {
+    color:#eb4d4b;
+    }
+    /**************************************/
+    .search{
     width: 100%;
     height: 200px;
     background-image: url(../images/bg.jpg);
@@ -456,59 +62,89 @@ color: rgb(233, 32, 76);
     justify-content: center;
     align-items: center;
     }
-    .psear{
-
-        font-size: 35px;
-        font-weight: bold;
-        padding: 0px 10px;
-        color: rgb(3, 3, 58);
-        
-        
+    .input1{
+    width: 560px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 5px;
     }
-   
- .spsear{
-    
-    font-size: 35px;
-    font-weight: bold;
+    .but1{
+    /* background-color: rgb(233, 100, 144); */
+    background-color:rgb(255, 71, 111);
+    height: 40px;
+    width: 70px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
     color: white;
+    }
+    .but1:hover{
     
- }   
- .spsear a {
-    text-decoration: none; 
-    color: #ffffff; 
-    font-weight: bold; 
-}
-
-.spsear a:hover {
-  
-   color:#eb4d4b; 
-}
- /*.............................................*/
- .foodmenu{
-        margin-top: 100px;
-        background-color: #ececec;
-        height: auto;
-        padding: 3% 0;
-        /* flex-direction: row;
-        display: flex; */
+    background-color:rgb(233, 32, 76);
+    cursor: pointer;
+    
     }
-  .h2menu{
+    
+    #h1sec3{
+    margin-top: 55px;
     text-align: center;
-  }  
-    .pictur1{
-    width: 500px;
-    height: 160px;
-    background-color: rgb(248, 252, 255);
-    border-radius: 20px;
-    display: flex;
-    margin-left: 100px;
-    margin-top: 20px;
-    padding: 20px;
-    float: left;
+    margin-bottom: 100px;
     }
-   
+    .catgories{
+    
+        padding: 7% 0;
+    }
+    .sec3{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    
+    }
+    .pizzaimg{
+    height: 380px;
+    width: 295px;
+    border-radius: 15px 15px;
+    margin-right: -50px;
+    }
+    .h3piza{
+    
+        padding-bottom: 80px;
+    }
+    .burgerimg{
+        height: 380px;
+        width: 295px;
+        border-radius: 15px;
+    margin-right: -40px;
+    }
+    .momoimg{
+        height: 380px;
+        width: 295px;
+       
+    padding-right:60px ;
+    border-radius: 15px 15px;
+    }
+    .h2menu{
+    text-align: center;
+    
+    }
+    /*.....................menu...................*/
+    .imgmenu1{
+        width: 90px;
+        height: 90px;
+        border-radius:10px;
+        padding-right: 20px;
+        
+        }
+    .imgmen{
+    width: 120px;
+    height: 30px;
+    
+    padding-bottom: 10px;
+    }
     .bu_order{
-    background-color: rgb(233, 100, 144); ;
+    background-color: rgb(233, 100, 144); 
     font-size: 16px;
     color: white;
     border-radius: 5px;
@@ -517,6 +153,12 @@ color: rgb(233, 32, 76);
     margin-top:-20px;
     border: none;
     }
+    .bu_order:hover{
+        background-color: rgb(233, 32, 76);
+        cursor: pointer;
+        letter-spacing: 1px;
+        }
+    
     .price{
     font-weight: bold;
     font-size: 20px;
@@ -628,72 +270,338 @@ color: rgb(233, 32, 76);
         color: rgb(233, 32, 76);
     }
     
-  /*Format Of foodcate Section Ends Here*/
-
-
-  /*Format Of cate Section Starts Here*/
-
-  
-h1{
-    text-align: center;
-    margin-top: 80px;
-    font-weight: bold;
-}
-.cont {
-        margin-left: 30px;
-        margin-top: -50px;
-        display: flex;
-        
-}
-        .img{
+    /*Format Of Order Section Starts Here*/
+    
+    /*............form................*/
+    .forms{
+        /* background-image: url(bg.jpg); */
+        background-color: rgb(30, 166, 219);
+        height: 900px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+        .h2form{
+        text-align: center;
+        color: white;
+        padding: 100px;
+        /* margin-left: 550px; */
+        }
+        .for1{
+        margin-top: -70px;
+        width: 500px;
         height: 400px;
-        width: 350px;
-        float: left; 
-        margin-left: -3px;
-       
+        margin-left: 450px;
         }
-       
-       
-        #homeTitle {
-            margin-top:100px;
+        #imgfor{
+        height: 100px;
+        width: 100px;
+        border-radius: 15px;
+        margin: 20px;
         }
-        .pizza {
-            margin-left: 30px;
-            margin-top:-30px;
-            display: flex;
+        /***************************************************************************/
+      
+    /* Container for each image box */
+    .box-3 {
+        width: 85%;  /* Increased to 100% to make the image boxes larger */
+        float: left;
+        margin: 1%;  /* Reduced margin to fit more content */
+    }
+    
+    /* Ensure the container hides any overflow from image scaling */
+    .float-container {
+        position: relative;
+        overflow: hidden;  /* Hides the overflow caused by scaling */
+    }
+    
+    /* Text on the image */
+    .float-text {
+        position: absolute;
+        bottom: 40px;  /* Adjusted for better visibility */
+        left: 50%;
+        transform: translateX(-50%);  /* Center text horizontally */
+        font-size: 1.5em;  /* Increased font size */
+    }
+    
+    /* Image styling */
+    .img-responsive {
+        width: 100%;             /* Full width of the box */
+        height: 500px;           /* Increased height to make images taller */
+        object-fit: cover;       /* Ensure the image covers the area without distortion */
+        transition: transform 0.3s ease;  /* Smooth scaling transition */
+    }
+    
+    /* Add rounded corners to images */
+    .img-curve {
+        border-radius: 15px;
+    }
+    
+    /* Hover effect for enlarging images */
+    .box-3:hover .img-responsive {
+        transform: scale(1.15);  /* Increased the scale factor for more noticeable enlargement */
+    }
+    
+    
+        /**************************************************************************/
+        .inpt{
+        border: none;
+        height: 22px;
+        width: 300px;
+        padding-left: 8px;
+        border-radius: 5px;
+        margin-bottom: 10px;
         }
-        .pizzaimg {
-            height: 400px;
-            width: 400px;
-            float:left;
-            margin-left: -3px;
-        }
-        .pizzaimgg{
-            height: 100%;
-            border-radius: 15px;
-            margin-left:50px;
-            margin-right:100px;
-        }
-.imge3{
-margin-right:60px;
-
-}        
-        .h3 h3{
-            color: aliceblue;
-            margin-top: 100px;
+        .pfor{
+         font-size: 18px;
         }
         
-    .cont2 ,.cont2n,.cont3,.cont4,.cont5{
-        margin-left: 30px;
-        margin-top: 50px;
-                display: flex;
-    }         
-     
-    .final{
-margin-top: 30px;
-
+        /*..................form2..............*/
+        .for2{
+        margin-top: 40px;
+        }
+        .h4for2{
+        padding: 10px;
+        }
+        .inpt2{
+        margin:0px 10px;
+        height: 28px;
+        border: none;
+        border-radius: 4px;
+        width: 90%;
+        padding: 2px 10px;
+        font-size: 17.5px;
+        }
+        #txt{
+        
+            margin:0px 10px;
+            border: none;
+            border-radius: 10px;
+            width: 90%;
+            padding: 2px 10px;
+            font-size: 17.5px;
+        
+        
+        }
+        
+        .btn{
+        
+            
+                /* background-color: rgb(233, 100, 144); */
+                background-color:rgb(255, 71, 111);
+                height: 35px;
+                width: 101px;
+                border-radius: 6px;
+                border: none;
+                font-size: 16px;
+                color: white;
+                margin-top: 6px;
+                margin: 6px 10px;
+                }
+                .btn:hover{
+                
+                background-color:rgb(233, 32, 76);
+                cursor:pointer;
+                
+                }
+        .complete{
+         
+        width: 100%;
+        height: 300px;
+        }
+        
+        
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            }
+            .social ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 15px;
+            }
+            /*foot*/
+            #p_end{
+                text-align: center;
+                padding: 10px 0px;
+            }
+            #span_end a{
+            text-decoration: none;
+            color:  rgb(255, 97, 145);
+            }
+            
+            #span_end a:hover{
+            color: rgb(233, 32, 76);
+            }
+            .text-center a:hover{
+                color: rgb(233, 32, 76);
+            }
+    /*Format Of Order Section Ends Here*/
+    
+    
+    /*Format Of foodcate Section Starts Here*/
+    
+    
+    
+    .search{
+        width: 100%;
+        height: 200px;
+        background-image: url(../images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-position: bottom ;
+        padding: 4% 0;
+        margin-top:20px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .psear{
+    
+            font-size: 35px;
+            font-weight: bold;
+            padding: 0px 10px;
+            color: rgb(3, 3, 58);
+            
+            
+        }
+       
+     .spsear{
+        
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+        
+     }   
+     .spsear a {
+        text-decoration: none; 
+        color: #ffffff; 
+        font-weight: bold; 
     }
-    .social{
+    
+    .spsear a:hover {
+      
+       color:#eb4d4b; 
+    }
+     /*.............................................*/
+     .foodmenu{
+            margin-top: 100px;
+            background-color: #ececec;
+            height: auto;
+            padding: 3% 0;
+            /* flex-direction: row;
+            display: flex; */
+        }
+      .h2menu{
+        text-align: center;
+      }  
+        .pictur1{
+        width: 500px;
+        height: 160px;
+        background-color: rgb(248, 252, 255);
+        border-radius: 20px;
+        display: flex;
+        margin-left: 100px;
+        margin-top: 20px;
+        padding: 20px;
+        float: left;
+        }
+       
+        .bu_order{
+        background-color: rgb(233, 100, 144); ;
+        font-size: 16px;
+        color: white;
+        border-radius: 5px;
+        width: 99px;
+        height: 22px;
+        margin-top:-20px;
+        border: none;
+        }
+        .price{
+        font-weight: bold;
+        font-size: 20px;
+        }
+        .h4menu{
+        font-weight: bold;
+        font-size: 18px;
+        }
+        .discribe{
+        
+        color: darkgray;
+        }
+        .pictur2{
+            
+            width: 500px;
+            height: 130px;
+            background-color: rgb(248, 252, 255);
+            border-radius: 20px;
+            display: flex;
+            margin-left: 30px;
+            margin-top: 20px;
+            padding: 20px;
+           
+            float: left;
+        }
+        
+        .pictur3{
+            width: 500px;
+            height: 130px;
+            background-color: rgb(248, 252, 255);
+            border-radius: 20px;
+            display: flex;
+            margin-left: 100px;
+            margin-top: 20px;
+            padding: 20px;
+            float: left;
+            
+           
+        }
+        .pictur4{
+            width: 500px;
+            height: 130px;
+            background-color: rgb(248, 252, 255);
+            border-radius: 20px;
+            display: flex;
+            margin-left: 30px;
+            margin-top: 20px;
+            padding: 20px;
+             float: left; 
+            }
+        
+            .pictur5{
+                width: 500px;
+                height: 130px;
+                background-color: rgb(248, 252, 255);
+                border-radius: 20px;
+                display: flex;
+                margin-left: 100px;
+                margin-top: 20px;
+                padding: 20px;
+                 float: left; 
+                }
+         .pictur6{
+         width: 500px;
+        height: 130px;
+        background-color: rgb(248, 252, 255);
+         border-radius: 20px;
+         display: flex;
+         margin-left: 30px;
+         margin-top: 20px;
+         padding: 20px;
+         float: left; 
+          }
+          .text-center{
+        text-align: center;
+        padding-top: 50px;
+        color: rgb(228, 98, 137);
+        clear: both;
+          }
+          .text-center a{
+        text-decoration: none;
+        font-size: 18px;
+        color: rgb(248, 88, 136);
+          }
+        .social{
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -707,8 +615,6 @@ margin-top: 30px;
         #p_end{
             text-align: center;
             padding: 10px 0px;
-            margin-bottom:30px;
-            font-size: 18px;
         }
         #span_end a{
         text-decoration: none;
@@ -721,8 +627,103 @@ margin-top: 30px;
         .text-center a:hover{
             color: rgb(233, 32, 76);
         }
+        
+      /*Format Of foodcate Section Ends Here*/
+    
+    
+      /*Format Of cate Section Starts Here*/
+    
+      
+    h1{
+        text-align: center;
+        margin-top: 80px;
+        font-weight: bold;
+    }
+    .cont {
+            margin-left: 30px;
+            margin-top: -50px;
+            display: flex;
+            
+    }
+            .img{
+            height: 400px;
+            width: 350px;
+            float: left; 
+            margin-left: -3px;
            
-  /*Format Of cate Section Ends Here*/
-
-
-
+            }
+           
+           
+            #homeTitle {
+                margin-top:100px;
+            }
+            .pizza {
+                margin-left: 30px;
+                margin-top:-30px;
+                display: flex;
+            }
+            .pizzaimg {
+                height: 400px;
+                width: 400px;
+                float:left;
+                margin-left: -3px;
+            }
+            .pizzaimgg{
+                height: 100%;
+                border-radius: 15px;
+                margin-left:50px;
+                margin-right:100px;
+            }
+    .imge3{
+    margin-right:60px;
+    
+    }        
+            .h3 h3{
+                color: aliceblue;
+                margin-top: 100px;
+            }
+            
+        .cont2 ,.cont2n,.cont3,.cont4,.cont5{
+            margin-left: 30px;
+            margin-top: 50px;
+                    display: flex;
+        }         
+         
+        .final{
+    margin-top: 30px;
+    
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            }
+            .social ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 15px;
+            }
+            /*foot*/
+            #p_end{
+                text-align: center;
+                padding: 10px 0px;
+                margin-bottom:30px;
+                font-size: 18px;
+            }
+            #span_end a{
+            text-decoration: none;
+            color:  rgb(255, 97, 145);
+            }
+            
+            #span_end a:hover{
+            color: rgb(233, 32, 76);
+            }
+            .text-center a:hover{
+                color: rgb(233, 32, 76);
+            }
+               
+      /*Format Of cate Section Ends Here*/
+    
+    
+    
+    
