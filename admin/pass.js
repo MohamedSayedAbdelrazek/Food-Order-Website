@@ -1,5 +1,6 @@
 var a;
 function pass(){
+
     if(a==1)
     {
         document.getElementById("userp").type='text';
@@ -12,4 +13,5 @@ function pass(){
         document.getElementById('pass-icon').src='hidden.png';
         a=1;
         
-    }}
+    }
+}

@@ -20,22 +20,22 @@ include ('partials/menu.php');
     <table class="tbl-30">
         <tr>
             <td>Current Password : </td>
-            <td> <input type="password" name="current_password" placeholder="Current Password"></td>
+            <td> <input type="password" name="current_password" placeholder="Current Password" id="CurrentPassword"></td>
         </tr>
     <tr>
         <td>New Password : </td>
-        <td> <input type="password" name="new_password" placeholder="New Password"  > </td>
+        <td> <input type="password" name="new_password" placeholder="New Password"  id="NewPassword"> </td>
 </br></br>
     </tr>
     <tr>
             <td>Confirm Password : </td>
             <td colspan="2"> 
-                <input type="password" name="confirm_password" placeholder="Confirm Password">
+                <input type="password" name="confirm_password" placeholder="Confirm Password" id="ConfirmPassword">
             </td>
         </tr>
         <tr>
           <input type="hidden" name="id" value="<?php echo $id;?>">
-            <td> <input type="submit" value="Change Password" name="submit" class="btn-secondary"></td>
+            <td> <input type="submit" value="Change Password" name="submit" class="btn-secondary" id="btn-change"></td>
         </tr>
     </table>
    

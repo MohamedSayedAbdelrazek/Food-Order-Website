@@ -41,7 +41,7 @@
             <div class="icon">
            
             <input type="password" name="password" id="userp" placeholder="Enter Your Password" req>
-            <img src="eye.png" alt="" onclick="pass()"
+            <img src="hidden.png" alt="" onclick="pass()"
 class="pass-icon" id="pass-icon">
 
         </div> </br>
